@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #98fb98;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="namesayer.MainController">
+   <children>
+      <Button fx:id="playButton" layoutX="28.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#playClicked" text="Play" />
+      <Button fx:id="createButton" alignment="CENTER" layoutX="231.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#createClicked" text="Create" />
+      <Button fx:id="deleteButton" alignment="CENTER_RIGHT" layoutX="329.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#deleteClicked" text="Delete" />
+      <ListView fx:id="creationList" layoutX="28.0" layoutY="67.0" onMouseClicked="#creationListClicked" prefHeight="256.0" prefWidth="234.0" />
+      <Text fill="GHOSTWHITE" layoutX="217.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name Sayer">
+         <font>
+            <Font name="Gentium" size="31.0" />
+         </font></Text>
+      <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" layoutX="359.0" layoutY="89.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></MediaView>
+      <Button fx:id="refresh" layoutX="114.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#refreshClicked" text="Refresh" />
+      <Button fx:id="quitButton" layoutX="497.0" layoutY="342.0" mnemonicParsing="false" onMouseClicked="#ifQuitClicked" text="Quit" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+   <effect>
+      <Lighting diffuseConstant="1.46">
+         <bumpInput>
+            <Shadow />
+         </bumpInput>
+         <light>
+            <Light.Distant />
+         </light>
+      </Lighting>
+   </effect>
+</AnchorPane>

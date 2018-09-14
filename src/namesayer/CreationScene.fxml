@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #98fb98;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="namesayer.CreationController">
+   <children>
+      <TextField fx:id="creationName" layoutX="226.0" layoutY="188.0" promptText="Example:Sean Spires">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></TextField>
+      <Text fx:id="creationText" fill="GHOSTWHITE" layoutX="167.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter the name of your creation">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Button fx:id="confirmCreate" layoutX="117.0" layoutY="255.0" mnemonicParsing="false" onMouseClicked="#creationConfirmClick" text="Create" />
+      <Button fx:id="creationExit" layoutX="429.0" layoutY="255.0" mnemonicParsing="false" onMouseClicked="#creationExitClick" text="Exit" />
+   </children>
+   <cursor>
+      <Cursor fx:constant="HAND" />
+   </cursor>
+   <effect>
+      <Lighting diffuseConstant="1.38">
+         <bumpInput>
+            <Shadow />
+         </bumpInput>
+         <light>
+            <Light.Distant />
+         </light>
+      </Lighting>
+   </effect>
+</AnchorPane>
